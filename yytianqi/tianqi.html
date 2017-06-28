@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>文档的标题</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="style.css" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jss.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <h1>Show the Local Weather</h1>
+  <div>
+    <select id="city">
+      <option value="CH010100">北京</option>
+      <option value="CH030100">天津</option>
+      <option value="CH040100">重庆</option>
+      <option value="CH020100">上海</option>
+      <option value="CH120101">济南</option>
+    </select>
+  </div>
+  <div class="show">
+    <p>更新时间：<span id="lastUpdate"></span></p>
+    <p>当前温度：<span id="qw"></span></p>
+    <p>当前天气：<span id="tq"></span></p>    
+    <p>当前湿度：<span id="sd"></span>%</p>
+    <p>PM2.5浓度：<span id="pm25"></span>&nbsp μg/m3</p>
+    <p>空气质量状况：<span id="grade"></span></p>
+  </div>
+</div>
+</body>
+
+</html>
