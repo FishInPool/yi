@@ -1,0 +1,131 @@
+*{
+	/*background: rgba(0,0,0,.1);*/
+	-webkit-transition:background .1s;
+	-moz-transition:background .1s;
+	-ms-transition:background .1s;
+	-o-transition:background .1s;
+	transition:background .1s;
+}
+body{
+	background: #d1c7b7;
+}
+.container{
+	max-width: 900px;
+	margin:0 auto;
+	position: relative;
+}
+h1 {
+	text-align:center;
+}
+input,.task-item,button {
+	padding:10px;
+	border-radius: 3px;
+}
+input[type=text],input[type=date] {
+	float:left;
+	border:1px solid #ddd;
+	display: block;
+	width:80%;
+	margin-right:1%;
+}
+input:focus,textarea:focus{
+	background:rgba(180,180,180,.3);
+}
+
+.add-task {
+	margin:2px;
+	height:40px;
+}
+.add-task input[type=text]{
+	float:left;
+}
+.add-task button {
+	display: block;
+	float:left;
+	width:16.5%;
+	border:0;
+	color:#fff;
+	font-weight: bold;
+	cursor: pointer;
+	background: #009ad6;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,.4);
+	box-shadow:0 1px 1px rgba(0,0,0,.4);
+}
+.task-list {
+	margin:5px 0;
+	width:100%;
+}
+.task-item {
+	background: #ba8448;
+	color:#eee;
+	margin-bottom: 3px;
+	cursor:pointer;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,.4);
+	box-shadow:0 1px 1px rgba(0,0,0,.4);
+}
+.task-item:hover {
+	background: #896a45;
+}
+.task-item.completed {
+	background: rgba(0,0,0,.4);
+	color:#bbb;
+}
+.task-item.completed::after{
+	content:'';
+	position: relative;
+	display: block;
+	height:1px;
+	width:100%;
+	background: #bbb;
+	top:-7px;
+}
+.task-content {
+	padding-left:10px;
+}
+.task-detail-mask,.task-detail {
+	position: absolute;
+	display: none;
+}
+.task-detail-mask {
+	width: 100%;
+	height:100%;
+	top:0;bottom: 0;left:0;right:0;
+	/*background: rgba(100,100,100,.4);*/
+
+}
+.task-detail {
+	bottom:0;right:0;
+	background: #feeeed;
+	color:#333;
+	padding:10px;
+	height:100%;
+	width:50%;
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,.4);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,.4);
+	box-shadow:0 0 3px rgba(0,0,0,.4);
+}
+.task-detail >* {
+	margin-bottom: 10px;
+}
+.task-detail .content{
+	padding:10px;
+	font-weight: 900;
+	cursor: pointer;
+}
+.task-detail textarea {
+	width:100%;
+	min-height:100px;
+}
+.btnspan {
+	float:right;
+}
+.btn {
+	color:#ccc;
+	font-size: 90%;
+	margin-left:10px;
+}
+.btn:hover {
+	color:#999;
+}
